@@ -74,9 +74,7 @@ export const PeoplePage: React.FC = () => {
           )}
 
           {hasNoPeople && (
-            <p data-cy="noPeopleMessage">
-              There are no people on the server<span>{errorMessage}</span>
-            </p>
+            <p data-cy="noPeopleMessage">There are no people on the server</p>
           )}
 
           {showPeople && <PeopleTable />}
